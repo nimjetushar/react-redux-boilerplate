@@ -13,3 +13,6 @@
 
 **/*.json
 
+**/*.test.js
+**/*.spec.js
+
