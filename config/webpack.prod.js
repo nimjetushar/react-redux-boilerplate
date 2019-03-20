@@ -18,8 +18,8 @@ module.exports = mode => {
       chunkFilename: "[id].chunk.[hash].js"
     },
     plugins: [
-      new CleanWebpackPlugin([path.resolve(rootDir, 'dist')], {
-        allowExternal: true
+      new CleanWebpackPlugin({
+        cleanOnceBeforeBuildPatterns: [path.resolve(rootDir, 'dist')]
       }),
       new OptimizeCSSAssetsPlugin({}),
       new CopyWebpackPlugin(
