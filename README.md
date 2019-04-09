@@ -1,9 +1,10 @@
 # React-redux-boilerplate
 
-[![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=nimjetushar/React-redux-boilerplate)](https://dependabot.com)
 [![Build Status](https://semaphoreci.com/api/v1/nimjetushar/react-redux-boilerplate/branches/master/shields_badge.svg)](https://semaphoreci.com/nimjetushar/react-redux-boilerplate)
-[![StackShare](https://img.shields.io/badge/tech-stack-0690fa.svg?style=flat)](https://stackshare.io/nimjetushar/react-redux-boilerplate)
+[![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=nimjetushar/React-redux-boilerplate)](https://dependabot.com)
+<br/>
 [![GitHub license](https://img.shields.io/github/license/nimjetushar/React-redux-boilerplate.svg)](https://github.com/nimjetushar/React-redux-boilerplate/blob/master/LICENSE)
+[![StackShare](https://img.shields.io/badge/tech-stack-0690fa.svg?style=flat)](https://stackshare.io/nimjetushar/react-redux-boilerplate)
 
 This project contains the boiler plate for react js having integration with redux for state management and scss as css pre-processor.
 
