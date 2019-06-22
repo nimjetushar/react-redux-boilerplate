@@ -5,6 +5,7 @@
 <br/>
 [![GitHub license](https://img.shields.io/github/license/nimjetushar/React-redux-boilerplate.svg)](https://github.com/nimjetushar/React-redux-boilerplate/blob/master/LICENSE)
 [![StackShare](https://img.shields.io/badge/tech-stack-0690fa.svg?style=flat)](https://stackshare.io/nimjetushar/react-redux-boilerplate)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/nimjetushar/React-redux-boilerplate.svg)
 
 This project contains the boiler plate for react js having integration with redux for state management and scss as css pre-processor.
 
