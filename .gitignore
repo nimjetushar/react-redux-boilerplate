@@ -22,4 +22,3 @@ yarn-error.log*
 
 src/**/*.css
 /dist
-/package-lock.json
