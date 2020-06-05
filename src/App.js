@@ -1,8 +1,8 @@
-import React, { Component } from "react";
-import "./App.scss";
-import { Provider } from "react-redux";
+import './App.scss';
 
-import store from "./store";
+import React, { Component } from 'react';
+import { Provider } from 'react-redux';
+import store from './store';
 
 class App extends Component {
   render() {

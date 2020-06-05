@@ -1,5 +1,5 @@
-import { combineReducers } from "redux";
-import sampleReducer from "./sampleReducer";
+import { combineReducers } from 'redux';
+import sampleReducer from './sampleReducer';
 
 export default combineReducers({
   // add child reducers

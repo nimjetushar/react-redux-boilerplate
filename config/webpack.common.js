@@ -4,89 +4,89 @@ const HtmlWebpackPlugin = require('html-webpack-plugin'),
 function fileLoaderOpt(type) {
   return {
     name: '[name].[ext]',
-    publicPath: type,
-    outputPath: type
-  }
+    outputPath: type,
+    publicPath: type
+  };
 }
 
 module.exports = mode => {
   return {
     entry: {
-      polyfills: './src/polyfills.js',
-      app: './src/index.js'
-    },
-
-    resolve: {
-      extensions: ['.js', '.jsx']
+      app: './src/index.js',
+      polyfills: './src/polyfills.js'
     },
 
     module: {
       rules: [{
-          test: /\.(js|jsx)$/,
-          exclude: /node_modules/,
-          use: {
-            loader: 'babel-loader'
+        exclude: /node_modules/,
+        test: /\.(js|jsx)$/,
+        use: {
+          loader: 'babel-loader'
+        }
+      },
+      {
+        test: /\.html$/,
+        use: [{
+          loader: 'html-loader',
+          options: {
+            minimize: true
           }
-        },
-        {
-          test: /\.html$/,
-          use: [{
-            loader: 'html-loader',
-            options: {
-              minimize: true
-            }
-          }]
-        },
-        {
-          test: /\.scss$/,
-          use: [
-            // fallback to style-loader in development
-            !mode ?
+        }]
+      },
+      {
+        test: /\.scss$/,
+        use: [
+          // fallback to style-loader in development
+          !mode ?
             'style-loader' :
             MiniCssExtractPlugin.loader,
-            'css-loader',
-            'sass-loader'
-          ]
-        },
-        {
-          test: /\.css$/,
-          include: /node_modules/,
-          use: ['css-loader']
-        },
-        {
-          test: /\.(eot|svg|ttf|woff|woff2)$/,
-          use: [{
-            loader: 'file-loader',
-            options: fileLoaderOpt('font'),
-          }]
-        },
-        {
-          test: /\.(png|jpg|jpeg|gif)$/,
-          use: [{
-            loader: 'file-loader',
-            options: fileLoaderOpt('image'),
-          }]
-        }
+          'css-loader',
+          'sass-loader'
+        ]
+      },
+      {
+        include: /node_modules/,
+        test: /\.css$/,
+        use: ['css-loader']
+      },
+      {
+        test: /\.(eot|svg|ttf|woff|woff2)$/,
+        use: [{
+          loader: 'file-loader',
+          options: fileLoaderOpt('font')
+        }]
+      },
+      {
+        test: /\.(png|jpg|jpeg|gif)$/,
+        use: [{
+          loader: 'file-loader',
+          options: fileLoaderOpt('image')
+        }]
+      }
       ]
+    },
+
+    optimization: {
+      mergeDuplicateChunks: true,
+      splitChunks: {
+        chunks: 'all',
+        maxAsyncRequests: 5,
+        minChunks: 1
+      }
     },
 
     plugins: [
       new HtmlWebpackPlugin({
-        template: './public/index.html', // Input FileName
-        filename: './index.html' // Output FileName
+        filename: './index.html', // Output FileName
+        template: './public/index.html' // Input FileName
       }),
       new MiniCssExtractPlugin({
         filename: '[name].[hash].css'
       })
     ],
 
-    optimization: {
-      splitChunks: {
-        chunks: 'all',
-        maxAsyncRequests: 5,
-        minChunks: 1
-      },
-      mergeDuplicateChunks: true
+    resolve: {
+      extensions: ['.js', '.jsx']
     }
-  }
+  };
 };
