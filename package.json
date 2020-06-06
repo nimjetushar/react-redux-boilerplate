@@ -24,7 +24,6 @@
     "enzyme-adapter-react-16": "1.15.2",
     "enzyme-to-json": "3.5.0",
     "eslint": "6.8.0",
-    "eslint-plugin-react": "7.20.0",
     "file-loader": "6.0.0",
     "html-loader": "0.5.5",
     "html-webpack-plugin": "4.3.0",
@@ -46,23 +45,6 @@
     "build": "webpack --env.production",
     "lint": "eslint --ext .js,.jsx src/**",
     "test": "jest"
-  },
-  "jest": {
-    "setupFiles": [
-      "./testSetup.js"
-    ],
-    "snapshotSerializers": [
-      "enzyme-to-json/serializer"
-    ],
-    "collectCoverageFrom": [
-      "src/**/*.{js,jsx}",
-      "!<rootDir>/node_modules/",
-      "!<rootDir>/public/"
-    ],
-    "moduleNameMapper": {
-      "\\.(css|less|sass|scss)$": "identity-obj-proxy",
-      "\\.(gif|ttf|eot|svg)$": "<rootDir>/__mocks__/fileMock.js"
-    }
   },
   "buildconfig": {
     "port": 3000,
