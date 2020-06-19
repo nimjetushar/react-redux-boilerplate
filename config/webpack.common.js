@@ -1,4 +1,6 @@
-const HtmlWebpackPlugin = require('html-webpack-plugin'),
+/* eslint-disable sort-keys */
+const path = require('path'),
+  HtmlWebpackPlugin = require('html-webpack-plugin'),
   MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 function fileLoaderOpt(type) {
@@ -20,8 +22,9 @@ module.exports = mode => {
       rules: [{
         exclude: /node_modules/,
         test: /\.(js|jsx)$/,
-        use: {
-          loader: 'babel-loader'
+        loader: 'babel-loader',
+        options: {
+          configFile: path.resolve('babel.config.js')
         }
       },
       {
@@ -86,7 +89,8 @@ module.exports = mode => {
     ],
 
     resolve: {
-      extensions: ['.js', '.jsx']
+      extensions: ['.js', '.jsx'],
+      modules: ['node_modules']
     }
   };
 };
