@@ -24,7 +24,7 @@
     "copy-webpack-plugin": "6.0.2",
     "css-loader": "3.5.3",
     "enzyme": "3.11.0",
-    "enzyme-adapter-react-16": "1.15.2",
+    "enzyme-adapter-react-16": "1.15.6",
     "enzyme-to-json": "3.5.0",
     "eslint": "6.8.0",
     "file-loader": "6.0.0",
