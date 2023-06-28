@@ -1,0 +1,34 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./jquery.js"></script>
+    <script src="./script.js"></script>
+</head>
+
+<body>
+    <h2>Server Test Page</h2>
+    <div class="container">
+        <div class="left_sec">
+            <button onclick="readData()">Read data</button>
+            <br>
+            <br>
+            <div class="content_area"></div>
+        </div>
+        <div class="right_sec">
+
+            <label>Name</label><input type="text" id="name" required/>
+            <br>
+            <br>
+            <label>city</label><input type="text" id="city" required/>
+            <br>
+            <br>
+            <button onclick="postData()">Submit</button>
+            <br>
+            <br>
+            <span class="msg_wrapper"></span>
+        </div>
+    </div>
+</body>
+
+</html>
