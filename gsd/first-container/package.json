@@ -1,0 +1,15 @@
+{
+  "name": "hello-docker",
+  "version": "1.0.0",
+  "description": "Web server showing host that responded",
+  "author": "@nimjetushar",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "bytes": "3.1.2",
+    "express": "4.17.3",
+    "express-handlebars": "6.0.2",
+    "handlebars": "4.7.7",
+    "minimist": "1.2.5"
+  }
+}

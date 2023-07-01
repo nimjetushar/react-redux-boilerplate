@@ -1,0 +1,222 @@
+{
+  "CUT_TIME": {
+    "order": 1,
+    "displayableName": "Time (Tx - Prescribed)",
+    "isPrimary": true,
+    "isPrescriptionData": false,
+    "isStandardText": true,
+    "panel": {
+      "name": "Fluid",
+      "order": 1
+    }
+  },
+  "DURATIONTX": {
+    "order": 2,
+    "displayableName": "Actual Duration",
+    "isPrimary": false,
+    "isPrescriptionData": false,
+    "isStandardText": true,
+    "panel": {
+      "name": "Fluid",
+      "order": 1
+    }
+  },
+  "DURATIONRX": {
+    "order": 3,
+    "displayableName": "Prescribed Duration",
+    "isPrimary": false,
+    "isPrescriptionData": true,
+    "isStandardText": true,
+    "panel": {
+      "name": "Fluid",
+      "order": 1
+    }
+  },
+  "IDWG": {
+    "order": 4,
+    "displayableName": "IDWG",
+    "isPrimary": true,
+    "isPrescriptionData": false,
+    "isStandardText": true,
+    "panel": {
+      "name": "Fluid",
+      "order": 1
+    }
+  },
+  "WTPRETX": {
+    "order": 5,
+    "displayableName": "Pre Weight",
+    "isPrimary": true,
+    "isPrescriptionData": false,
+    "isStandardText": true,
+    "panel": {
+      "name": "Fluid",
+      "order": 1
+    }
+  },
+  "WTTARGET": {
+    "order": 6,
+    "displayableName": "Target Weight",
+    "isPrimary": true,
+    "isPrescriptionData": false,
+    "isStandardText": true,
+    "panel": {
+      "name": "Fluid",
+      "order": 1
+    }
+  },
+  "WTREMOVALGOAL": {
+    "order": 7,
+    "displayableName": "Weight Removal Goal",
+    "isPrimary": false,
+    "isPrescriptionData": true,
+    "isStandardText": true,
+    "panel": {
+      "name": "Fluid",
+      "order": 1
+    }
+  },
+  "WTRATIO": {
+    "order": 8,
+    "displayableName": "Pre Weight/Target Weight",
+    "isPrimary": false,
+    "isPrescriptionData": false,
+    "isStandardText": true,
+    "panel": {
+      "name": "Fluid",
+      "order": 1
+    }
+  },
+  "WTPOSTTX": {
+    "order": 9,
+    "displayableName": "Post Weight",
+    "isPrimary": true,
+    "isPrescriptionData": false,
+    "isStandardText": true,
+    "panel": {
+      "name": "Fluid",
+      "order": 1
+    }
+  },
+  "WTREMOVEDTX": {
+    "order": 10,
+    "displayableName": "Weight Removed",
+    "isPrimary": false,
+    "isPrescriptionData": false,
+    "isStandardText": true,
+    "panel": {
+      "name": "Fluid",
+      "order": 1
+    }
+  },
+  "UFRTX": {
+    "order": 11,
+    "displayableName": "UFR (Actual)",
+    "isPrimary": false,
+    "isPrescriptionData": false,
+    "isStandardText": true,
+    "panel": {
+      "name": "Fluid",
+      "order": 1
+    }
+  },
+  "UFRRX": {
+    "order": 12,
+    "displayableName": "Max UFR",
+    "isPrimary": false,
+    "isPrescriptionData": false,
+    "isStandardText": true,
+    "panel": {
+      "name": "Fluid",
+      "order": 1
+    }
+  },
+  "BPSTANDPRETX": {
+    "order": 1,
+    "displayableName": "Pre BP Standing",
+    "isPrimary": true,
+    "isPrescriptionData": false,
+    "isStandardText": true,
+    "panel": {
+      "name": "Blood Pressure and Heart Rate",
+      "order": 2
+    }
+  },
+  "BPSITPRETX": {
+    "order": 2,
+    "displayableName": "Pre BP Sitting",
+    "isPrimary": true,
+    "isPrescriptionData": false,
+    "isStandardText": true,
+    "panel": {
+      "name": "Blood Pressure and Heart Rate",
+      "order": 2
+    }
+  },
+  "HRSITPRETX": {
+    "order": 3,
+    "displayableName": "Pre HR Sitting",
+    "isPrimary": true,
+    "isPrescriptionData": false,
+    "isStandardText": true,
+    "panel": {
+      "name": "Blood Pressure and Heart Rate",
+      "order": 2
+    }
+  },
+  "BPLOWESTTX": {
+    "order": 4,
+    "displayableName": "Lowest BP",
+    "isPrimary": true,
+    "isPrescriptionData": false,
+    "isStandardText": true,
+    "panel": {
+      "name": "Blood Pressure and Heart Rate",
+      "order": 2
+    }
+  },
+  "BPSTANDPOSTTX": {
+    "order": 5,
+    "displayableName": "Post BP Standing",
+    "isPrimary": true,
+    "isPrescriptionData": false,
+    "isStandardText": true,
+    "panel": {
+      "name": "Blood Pressure and Heart Rate",
+      "order": 2
+    }
+  },
+  "BPSITPOSTTX": {
+    "order": 6,
+    "displayableName": "Post BP Sitting",
+    "isPrimary": true,
+    "isPrescriptionData": false,
+    "isStandardText": true,
+    "panel": {
+      "name": "Blood Pressure and Heart Rate",
+      "order": 2
+    }
+  },
+  "HRSITPOSTTX": {
+    "order": 7,
+    "displayableName": "Post HR Sitting",
+    "isPrimary": true,
+    "isPrescriptionData": false,
+    "isStandardText": true,
+    "panel": {
+      "name": "Blood Pressure and Heart Rate",
+      "order": 2
+    }
+  },
+  "VPRESSTX": {
+    "order": 8,
+    "displayableName": "VP@200",
+    "isPrimary": true,
+    "isPrescriptionData": false,
+    "isStandardText": true,
+    "panel": {
+      "name": "Blood Pressure and Heart Rate",
+      "order": 2
+    }
+  }
+}
